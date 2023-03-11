@@ -1,0 +1,11 @@
+{
+    "Projects":[
+    {
+        "id": 1,
+        "name":"The lightning Legacy",
+        "path":"P:/FRONTEND/Projects/electron-vite-react/src/ProjectSample"
+    }
+    ],
+    "Settings":[
+    ]
+}

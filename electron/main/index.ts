@@ -1,4 +1,4 @@
-import { app, BrowserWindow, ipcMain, shell } from 'electron'
+import { app, BrowserWindow, ipcMain, shell, Menu } from 'electron'
 import { release } from 'node:os'
 import { join } from 'node:path'
 
@@ -56,6 +56,7 @@ async function createWindow() {
     },
   })
 
+  Menu.setApplicationMenu(null)
   if (process.env.VITE_DEV_SERVER_URL) { // electron-vite-vue#298
     win.loadURL(url)
     // Open devTool if the app is not packaged

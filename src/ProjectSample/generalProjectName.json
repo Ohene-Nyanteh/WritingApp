@@ -1,0 +1,9 @@
+{
+    "ProjectProperties":{
+        "name": "The Lightning Legacy",
+        "saveDirectory": "P:/FRONTEND/Projects/electron-vite-react/src/ProjectSample/Save"
+    },
+    "WorkspaceSetup":{
+        "theme": "light"
+    }
+}
