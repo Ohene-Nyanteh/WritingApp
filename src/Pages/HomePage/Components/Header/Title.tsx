@@ -9,17 +9,22 @@ function TitleBar() {
     const project_name = App.Projects[0].name
     const {theme, toggleTheme} = useTheme()
     return (
-      <section className="w-full border-b-2 border-gray-200 dark:text-gray-50 flex gap-2 h-fit bg-gray-50 dark:bg-gray-800 py-1 px-1">
-        <div className="h-fit w-fit rounded-md p-0">
+      <section className="w-full border-b-[1px] items-center dark:border-b-gray-700 border-gray-300 dark:text-gray-50 flex gap-2 bg-gray-50 dark:bg-gray-800 py-1 px-1">
+        <div className="rounded-md p-0 s-auto">
           {theme === "light" ? (
             <img
               src={LightLogo}
-              width={27}
-              height={27}
-              className="rounded-md"
+              width={20}
+              height={20}
+              className="rounded-md max-w-none max-h-none"
             />
           ) : (
-            <img src={DarkLogo} width={27} height={27} className="rounded-md" />
+            <img
+              src={DarkLogo}
+              width={20}
+              height={20}
+              className="rounded-md max-w-none max-h-none"
+            />
           )}
         </div>
         <div className="flex gap-2">
@@ -35,8 +40,8 @@ function TitleBar() {
             );
           })}
         </div>
-        <p className="w-full text-center">{project_name}</p>
-        <div className="flex flex-grow justify-end w-full">
+        <p className="w-full flex flex-grow justify-center">{project_name}</p>
+        <div className="ml-32">
           {theme === "light" ? (
             <FaMoon onClick={toggleTheme} size={20} />
           ) : (
